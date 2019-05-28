@@ -1,0 +1,21 @@
+/*
+Yong Da Li
+Friday, May 24, 2019
+
+learning javascript, node.js, and SQL in preparation
+for setting up remote access of experimental data
+
+on research exchange at NUS
+- rooftop coated glass film testing
+- want to remotely start and collect data
+
+first time writing javascript!
+tutorial followed: https://www.guru99.com/download-install-node-js.html
+*/
+
+var http = require('http');
+
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('Hello World!');
+}).listen(8080);
