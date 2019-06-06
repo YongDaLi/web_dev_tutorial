@@ -6,7 +6,7 @@
     -->
 
 <!DOCTYPE html>
-<html>
+<html lang="EN-CA">
 <head>
     <title>JavaScript Introduction</title>
 </head>
@@ -16,6 +16,7 @@
 <hr>
 <p id="demo">JavaScript can change HTML content</p>
 
+<!-- change content -->
 <button type="button" onclick='document.getElementById("demo").innerHTML="Hello Javascript!"'>Click Me!</button>
 
 <button type="button" onclick='document.getElementById("demo").innerHTML="JavaScript can change HTML content"'>Restore original</button>
@@ -23,16 +24,22 @@
 <br>
 <br>
 
+<!-- pop up messages -->
 <button onclick="display_popup()">What time is it?</button>
-<button onclick='document.getElementById("time").innerHTML=Date()'>Show time on screen</button>
-
 <script>
     function display_popup(){
         alert("The time is: " + Date())
     }
 </script>
 
-<p id="time"></p>
+<hr>
+
+<!-- remove content -->
+<button onclick='document.getElementById("time").style.display="block"'>Show time</button>
+<button onclick='document.getElementById("time").innerHTML=Date()'>Update time</button>
+<button onclick='document.getElementById("time").style.display="none"'>Remove time</button>
+
+<p id="time">**date**</p>
 
 </body>
 </html>
