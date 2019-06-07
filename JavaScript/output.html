@@ -1,0 +1,44 @@
+<!-- Yong Da Li
+    Friday, June 7, 2019
+
+    tutorial: https://www.w3schools.com/js/js_output.asp
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Output</title>
+
+    <script src="output.js"></script>
+</head>
+
+<body>
+    <h1>Output</h1>
+    <hr>
+
+    <p>JavaScript can be used to change html in 4 ways</p>
+    <ol>
+        <li>innerHTML</li>
+        <li>document.write()</li>
+        <li>window.alert()</li>
+        <li>console.log</li>
+    </ol>
+
+    <button id="button" onclick=change_text()>Change Text</button>
+    <p id="text">Text will change</p>
+
+    <button id="button" onclick=log_console()>Log Console</button>
+
+    <button id="popup_button" onclick=popup()>Popup</button>
+
+
+    <br>
+    <!-- document.write() overwrites existing HTML elements
+        should only be used for testing -->
+    <script>
+        document.write(5+3);
+    </script>
+
+</body>
+
+</html>
